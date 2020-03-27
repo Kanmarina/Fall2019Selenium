@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class ExamplesHomeWorks {
+public class  ExamplesHomeWorks {
     @Test (priority =100 , description = "Verify that the following message is displayed : 'This page returned a 500 status code'")
     public void testCase12() {
         //Test Case #12

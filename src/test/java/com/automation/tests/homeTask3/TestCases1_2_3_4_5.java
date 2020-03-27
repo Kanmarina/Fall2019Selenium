@@ -1,4 +1,4 @@
-package com.automation.tests.homeTask;
+package com.automation.tests.homeTask3;
 
 import com.automation.utilities.BrowserUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class HomeTask1 {
+public class TestCases1_2_3_4_5 {
     private WebDriver driver;
 
     @BeforeMethod
@@ -31,6 +31,7 @@ public class HomeTask1 {
 
     @AfterMethod
     public void teardown() {
+
         driver.quit();
     }
 
