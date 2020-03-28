@@ -22,7 +22,7 @@ public class JSExecutor {
         WebDriverManager.chromedriver().version("79").setup();
         driver = new ChromeDriver();
     }
-
+    //change commit name
     @AfterMethod
     public void teardown(){
         BrowserUtils.wait(3);

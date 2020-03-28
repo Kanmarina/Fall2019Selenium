@@ -19,7 +19,7 @@ public class JSExecutor2 {
         driver.get("http://practice.cybertekschool.com/");
         driver.manage().window().maximize();
     }
-
+    //change commit name
     @Test
     public void verifyTitle() {
         String expected = "Practice";
