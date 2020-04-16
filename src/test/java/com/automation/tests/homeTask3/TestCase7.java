@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 //Note: use element.sendKeys(“/file/path”) with
 //specifying path to the file for uploading. Run this
 //method against “Choose File” button.
+//TestCase7
 public class TestCase7 {
     private WebDriver driver;
 

@@ -11,9 +11,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+//STATIC IMPORT OF ALL ASSERTIONS
 import static org.testng.Assert.*;
 
-public class LoginPageTests {
+public class LoginTests {
     private WebDriver driver;
     //https is a secured version of http protocol
     //http - it's hypertext transfer protocol that every single website is using now days
@@ -30,7 +31,7 @@ public class LoginPageTests {
     private By warningMessageBy = By.cssSelector("[class='alert alert-error'] > div");
 
     @Test(description = "Verify that warning message displays when user enters invalid username")
-    public void invalidUsername() {
+    public void invalidUsername(){
         driver.findElement(usernameBy).sendKeys("invalidusername");
         driver.findElement(passwordBy).sendKeys("UserUser123", Keys.ENTER);
         BrowserUtils.wait(5);
@@ -44,7 +45,7 @@ public class LoginPageTests {
     }
 
     @Test(description = "Login as store manager and verify that tile is equals to Dashboard")
-    public void loginAsStoreManager() {
+    public void loginAsStoreManager(){
         driver.findElement(usernameBy).sendKeys(username);
         driver.findElement(passwordBy).sendKeys(password, Keys.ENTER);
         BrowserUtils.wait(5);

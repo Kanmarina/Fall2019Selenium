@@ -27,7 +27,6 @@ import java.time.format.DateTimeFormatter;
  * Verify that Create Calendar Event button is displayed
  */
 public class CalendarEventsPageTests {
-
     private By usernameBy = By.id("prependedInput");
     private By passwordBy = By.id("prependedInput2");
     private WebDriver driver;

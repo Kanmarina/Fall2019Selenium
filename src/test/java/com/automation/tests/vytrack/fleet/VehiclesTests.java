@@ -1,5 +1,4 @@
 package com.automation.tests.vytrack.fleet;
-
 import com.automation.utilities.BrowserUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -22,7 +21,7 @@ import org.testng.annotations.Test;
  - in this test, you will need to navigate to Fleet --> Vehicles and verify that page subtitle is equals to "All Cars"
  user assertions for validation.
  */
-public class VehiclesPageTests {
+public class VehiclesTests {
     private String URL = "https://qa2.vytrack.com/user/login";
     //    CREDENTIALS FOR store manager
     private String username = "storemanager85";
@@ -38,7 +37,7 @@ public class VehiclesPageTests {
     private WebDriver driver;
 
     @Test
-    public void verifyPageSubTitle() {
+    public void verifyPageSubTitle(){
 //################################################################
         //find subtitle element
         WebElement subTitleElement = driver.findElement(subtitleBy);
@@ -51,20 +50,22 @@ public class VehiclesPageTests {
     }
 
     /**
-     * ################ TASK 7 minutes until 3:48
-     * <p>
-     * Given user is on the vytrack landing page
-     * When user logs on as a store manager
-     * Then user navigates to Fleet --> Vehicles
-     * And user verifies that page number is equals to "1"
+     *
+     *     ################ TASK 7 minutes until 3:48
+     *
+     *     Given user is on the vytrack landing page
+     *     When user logs on as a store manager
+     *     Then user navigates to Fleet --> Vehicles
+     *     And user verifies that page number is equals to "1"
      */
     @Test
-    public void verifyPageNumber() {
+    public void verifyPageNumber(){
         String expected = "1";
         String actual = driver.findElement(pageNumberBy).getAttribute("value");
 
         Assert.assertEquals(actual, expected);
     }
+
 
 
     @BeforeMethod

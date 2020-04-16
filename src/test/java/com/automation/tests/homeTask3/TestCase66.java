@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.List;
-
+//TestCase66
 public class TestCase66 {
     WebDriver driver;
     private String URL1 = "https://www.tempmailaddress.com";
